@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Login
+ * Servlet implementation class SignUp
  */
-@WebServlet("/Login")
-public class Login extends HttpServlet {
+@WebServlet("/SignUp")
+public class SignUp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -27,10 +27,12 @@ public class Login extends HttpServlet {
 
 		PrintWriter out = response.getWriter();
 
-		if ((username.equals("vikram")) && (password.equals("vicky"))) {
-			out.println("<h1>Successfully logged in</h1>");
+		if ((username.equals("man")) && (password.equals("eater"))) {
+			out.println("<h1>Successfully Registered</h1>");
 		} else {
-			out.println("<h1>Login Failed</h1>");
+			out.println("<h1>Enter details</h1>");
 		}
 	}
-}
+	}
+
+
